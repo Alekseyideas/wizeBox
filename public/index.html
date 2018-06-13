@@ -2,19 +2,82 @@
 <html lang="eng">
   <head>
     <meta charset="utf-8">
-    <title>Title-Home page</title>
+    <title>wizeBox-Home page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex, nofollow">
+    <!--meta(name="robots" content="noindex, nofollow")-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One|Roboto|Saira+Semi+Condensed:300">
     <link rel="stylesheet" href="css/stylesheets.css?v1">
   </head>
   <body>
-    <main class="home"></main>
-    <div class="js-md"></div>
-    <div class="js-xs"></div>
-    <div class="js-lg"></div>
-    <div class="js-sm"></div>
-    <div class="js-xl"></div>
+    <header class="header">
+      <button class="btn header__icon"><img src="./images/icons/mail.svg"/>
+      </button>
+      <button class="btn header__icon"><img src="./images/icons/rectangle.svg"/>
+      </button>
+      <button class="btn header__icon"><img src="./images/icons/sun.svg"/><span>23 &#176;</span>
+      </button>
+      <button class="btn header__icon"><img src="./images/icons/el.svg"/>
+      </button>
+      <button class="btn header__icon"><img src="./images/icons/wi-fi-1.svg"/>
+      </button>
+    </header>
+    <main class="home">
+      <div class="home__block home__block--left">
+        <button class="btn home__icon-title home__icon-title--right"><span><img src="./images/icons/music-tone.png"/><span>MEDIA</span></span></button>
+        <button class="btn home__icon-title"><span><img src="./images/icons/icon-1.png"/><span>APPLICATIONS</span></span></button>
+        <button class="btn home__icon-title home__icon-title--right"><span><img src="./images/icons/wallet.png"/><span>WALLET</span></span></button>
+      </div>
+      <div class="home__block home__block--center">
+        <div class="time">Loading...</div><img class="home__bg home__bg--d" src="./images/home/bg-d.png"/><img class="home__bg home__bg--lt" src="./images/home/bg-lt.png"/><img class="home__bg home__bg--s" src="./images/home/bg-s.png"/>
+        <h2 class="home__text">What can I help you with?</h2>
+        <div class="text-input">
+          <input type="text" value="Lorem Ipsum is simply dummy text of the">
+        </div>
+      </div>
+      <div class="home__block home__block--right">
+        <button class="btn home__icon-title"><span><img src="./images/icons/phone.png"/><span>CALLS</span></span></button>
+        <button class="btn home__icon-title home__icon-title--right"><span><img src="./images/icons/share.png"/><span>AUTOMATION</span></span></button>
+        <button class="btn home__icon-title"><span><img src="./images/icons/upload.png"/><span>CLOUD</span></span></button>
+      </div>
+    </main>
+    <footer class="footer">
+      <button class="btn footer__icon">
+        <!--+image('icons','1_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','2_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','3_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','4_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','5_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','6_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','7_1.png')-->
+      </button>
+      <button class="btn footer__icon">
+        <!--+image('icons','8_1.png')-->
+      </button>
+    </footer>
+    <div class="popUp">
+      <div class="popUp__wrapper">
+        <div class="popUp__header">PopUp title here
+          <button class="btn btn--close"></button>
+        </div>
+        <div class="popUp__body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aliquam aliquid asperiores autem debitis, deleniti dolores excepturi inventore laboriosam maxime modi officia quaerat quasi quibusdam quos repellendus unde vel voluptatibus.</p>
+        </div>
+        <div class="popUp__footer">Footer text here</div>
+      </div>
+    </div>
     <script src="./js/bundle.js"></script>
   </body>
 </html>

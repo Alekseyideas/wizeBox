@@ -1,21 +1,27 @@
 html
   font-size: $startSize
 body
+  margin: 0
   font-size: $defaultSize
   font-family: $font
   line-height: $defaultLineHeight
   color: $defaultColor
-
+  background: no-repeat center / cover
+  @include bg_img('home','bg.jpg')
 div,span,a,main,section,input,select,textarea,article,aside,button,form
   box-sizing: border-box
 
-a,button,input,textarea,select
+a,button,input,textarea,select,div
   outline: 0
+  padding: 0
 
 a
   text-decoration: none
   color: $defaultColor
   transition: $defaultTransition
+
+h1,h2,h3,h4,h5,h6,p
+  margin: 0
 
 .btn
   display: block
@@ -27,4 +33,6 @@ input
   display: block
   width: 100%
 
-
+main
+  height: 100vh
+  min-height: 480px

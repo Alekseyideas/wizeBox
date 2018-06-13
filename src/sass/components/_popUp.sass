@@ -1,0 +1,42 @@
+.popUp
+  background: rgba(black,.8)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 2
+  display: none
+  &.active
+    display: flex
+    align-items: center
+    justify-content: center
+  &__wrapper
+    background: white
+    width: 50%
+    position: relative
+  .btn--close
+    position: absolute
+    right: 20px
+    top: 50%
+    margin-top: -12px
+    width: 24px
+    height: 24px
+    background: no-repeat center / cover
+    @include bg_img('icons','close.svg')
+  &__header
+    position: relative
+    background: #200d7c
+    color: white
+    font-size: 2.1rem
+    line-height: 2.1rem
+    padding: 20px
+  &__body
+    font-size: 1.4rem
+    color: #454545
+    padding: 20px
+  &__footer
+    background: white
+    color: grey
+    border-top: 1px solid grey
+    padding: 10px 20px

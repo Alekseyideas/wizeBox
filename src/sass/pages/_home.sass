@@ -1,0 +1,107 @@
+.home
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0
+  &__block
+    //margin: 0 40px
+    &--left
+      margin-left: 37px
+      width: 170px
+    &--right
+      margin-right: 37px
+      width: 170px
+    &--center
+      width: 300px
+      height: 300px
+      position: relative
+      background: no-repeat center / cover
+      margin: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      //@include bg_img('home','circle.png')
+      background-blend-mode: hard-light, multiply, normal
+
+
+
+  &__icon-title
+    //text-align: center
+    margin: 25px 0
+    display: flex
+    img
+      height: 36px
+      width: auto
+      margin: auto
+      display: block
+    span
+      font-size: 1.4rem
+      text-transform: uppercase
+      margin-top: 10px
+      display: block
+    &--right
+      margin-left: 70px
+  .text-input
+    position: absolute
+    width: 130%
+    margin-left: -15%
+    left: 0
+    top: 100%
+    margin-top: 5px
+    display: none
+    input
+      background: none
+      border: 0
+      outline: 0
+      color: $defaultColor
+      font-size: 1.6rem
+      text-align: center
+      border-bottom: 1px solid rgba($defaultColor,.2)
+
+  &__text
+    max-width: 60%
+    font-weight: 300
+    text-align: center
+    font-family: $Saira
+    color: rgba(#00a1fe,.7)
+    font-size: 2.8rem
+    line-height: 3.5rem
+    z-index: 1
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    &--d
+      animation: rotation 222s infinite linear
+      width: 90%
+      height: 90%
+      left: 5%
+      top: 5%
+    &--lt
+      animation: scaling 1s  infinite linear
+    &--s
+      width: 80%
+      height: 80%
+      left: 10%
+      top: 10%
+
+
+
+@keyframes rotation
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(359deg)
+
+@keyframes scaling
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.15)
+  100%
+    transform: scale(1)
+
+

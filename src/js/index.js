@@ -1,7 +1,9 @@
-import {MainFunc} from "./base/main";
 import {pageHome} from "./pages/home";
+import {time} from "./compontents/time";
+import {popUp} from "./compontents/popUp";
 
-const main = new MainFunc();
+
 
 pageHome();
-main.fnTest();
+time();
+popUp();
