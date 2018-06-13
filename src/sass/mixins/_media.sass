@@ -1,0 +1,34 @@
+=_media-xl-up()
+  @media screen and (min-width:  $xl )
+    @content
+=_media-xl-down()
+  @media screen and (max-width:  $xl - .02)
+    @content
+=_media-lg-up()
+  @media screen and (min-width:  $lg)
+    @content
+=_media-lg-down()
+  @media screen and (max-width:  $lg - .02)
+    @content
+=_media-md-up()
+  @media screen and (min-width:  $md)
+    @content
+=_media-md-down()
+  @media screen and (max-width:  $md - .02)
+    @content
+=_media-sm-up()
+  @media screen and (min-width:  $sm)
+    @content
+=_media-sm-down()
+  @media screen and (max-width:  $sm - .02)
+    @content
+=_media-xs-up()
+  @media screen and (min-width:  $xs)
+    @content
+=_media-xs-down()
+  @media screen and (max-width:  $xs - .02)
+    @content
+
+=_media-lg-landscape()
+  @media screen and (max-width:  $lg - .02) and (orientation: landscape)
+    @content

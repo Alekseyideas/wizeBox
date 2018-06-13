@@ -1,0 +1,27 @@
+include ../config
+block config
+
+doctype html
+html(lang=lang)
+
+    include head
+
+    body
+        include ../components/header
+
+        block content
+
+        include ../components/footer
+
+
+        .js-md
+        .js-xs
+        .js-lg
+        .js-sm
+        .js-xl
+
+        script(src='./js/bundle.js')
+
+
+
+
