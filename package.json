@@ -1,7 +1,7 @@
 {
-  "name": "projectname",
+  "name": "WizeBox",
   "version": "1.0.0",
-  "description": "projectname project",
+  "description": "WizeBox project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
