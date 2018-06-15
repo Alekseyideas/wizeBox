@@ -15,7 +15,8 @@ export const popUp =()=>{
     if(
       e.target.tagName.toLowerCase() !== 'button' &&
       e.target.parentNode.tagName.toLowerCase() !== 'button' &&
-      e.target.parentNode.parentNode.tagName.toLowerCase() !== 'button'
+      e.target.parentNode.parentNode.tagName.toLowerCase() !== 'button' &&
+      e.target.tagName.toLowerCase() !== 'input'
     ){
       objPopUp.showPopUp();
     }
